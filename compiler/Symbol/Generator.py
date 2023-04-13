@@ -176,9 +176,9 @@ class Generator:
         if(not self.inNatives):
             self.inFunc = False
 
-    ###############
+    ##############
     # STACK
-    ###############
+    ##############
     def setStack(self, pos, value, FreeValue = True):
         self.freeTemp(pos)
         if FreeValue:
@@ -189,9 +189,9 @@ class Generator:
         self.freeTemp(pos)
         self.codeIn(f'{place}=stack[int({pos})];\n')
 
-    #############
+    ##############
     # ENVS
-    #############
+    ##############
     def newEnv(self, size):
         self.codeIn(f'P=P+{size};\n')
 

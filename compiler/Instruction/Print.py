@@ -45,7 +45,7 @@ class Print(Instruction):
             generator.getStack(temp, 'P')
             generator.retEnv(env.size)
         else:
-            print("POR HACER")
+            print("POR HACER...")
         
         if self.newLine:
             generator.addPrint("c", 10)
